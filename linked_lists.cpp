@@ -19,9 +19,9 @@ class linkedList {
         void insertAfterNode(Node* prev_node);
         void insertNodeAtBegin();
         void insertNodeAtEnd(Node* &HEAD);
-		Node *getNodeByIndex();
-		Node *getNodeByValue();
-		void updateNodeValue();
+	Node *getNodeByIndex();
+	Node *getNodeByValue();
+	void updateNodeValue();
         void deleteNode();
 };
 
@@ -77,7 +77,7 @@ int main()
             case 4:
                 system("cls");
                 if (HEAD) {
-                        l.deleteNode();
+                    l.deleteNode();
                     threeSecondsLoading();
                 }
                 system("cls");
@@ -142,7 +142,7 @@ void linkedList :: createList(Node* &HEAD)
     }
 }
 
-// Afisare lista – afisarea elementelor listei (de ex. 2->4->9->NULL)
+// Afisare lista â€“ afisarea elementelor listei (de ex. 2->4->9->NULL)
 void linkedList :: displayList(Node* HEAD)
 {
     if (HEAD == NULL) return;
@@ -152,7 +152,7 @@ void linkedList :: displayList(Node* HEAD)
     cout << "NULL" << endl;
 }
 
-// Introducere elem – se va cere valoarea de introdus si pozitia noului elem (dupa un element dat)
+// Introducere elem â€“ se va cere valoarea de introdus si pozitia noului elem (dupa un element dat)
 void linkedList :: insertAfterNode(Node* prev_node)
 {
     if (prev_node == NULL)
@@ -170,7 +170,7 @@ void linkedList :: insertAfterNode(Node* prev_node)
     prev_node->next = new_node;
 }
 
-// Introducere elem – se va cere valoarea de introdus si pozitia noului elem (la inceput)
+// Introducere elem â€“ se va cere valoarea de introdus si pozitia noului elem (la inceput)
 void linkedList :: insertNodeAtBegin()
 {
     int new_data;
@@ -182,7 +182,7 @@ void linkedList :: insertNodeAtBegin()
     HEAD = temp;
 }
 
-// Introducere elem – se va cere valoarea de introdus si pozitia noului elem (la sfarsit)
+// Introducere elem â€“ se va cere valoarea de introdus si pozitia noului elem (la sfarsit)
 void linkedList :: insertNodeAtEnd(Node* &HEAD)
 {
     int new_data;
@@ -271,7 +271,7 @@ Node* linkedList :: getNodeByIndex()
     return temp;
 }
 
-// Cautare elem – se cauta o valoare data in lista; va returna pointer
+// Cautare elem â€“ se cauta o valoare data in lista; va returna pointer
 // la elementul gasit sau NULL daca valoarea nu este gasita
 Node* linkedList :: getNodeByValue() {
 
